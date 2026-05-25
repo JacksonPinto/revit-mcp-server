@@ -43,6 +43,7 @@ try:
     from routes import material_routes
     from routes import mep_routes
     from routes import analysis_routes
+    from routes import conduit_routes
 
     project_routes._get_routes(api)
     element_routes._get_routes(api)
@@ -56,6 +57,7 @@ try:
     material_routes._get_routes(api)
     mep_routes._get_routes(api)
     analysis_routes._get_routes(api)
+    conduit_routes._get_routes(api)
 
     print("[RevitMCP] Routes registered successfully on http://localhost:48884")
 

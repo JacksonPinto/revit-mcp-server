@@ -6,6 +6,7 @@ its tools with the MCP server instance.
 """
 
 from tools.analysis import register_tools as register_analysis_tools
+from tools.conduit import register_tools as register_conduit_tools
 from tools.elements import register_tools as register_element_tools
 from tools.families import register_tools as register_family_tools
 from tools.levels import register_tools as register_level_tools
@@ -35,6 +36,7 @@ def register_all_tools(mcp: object) -> None:
     register_material_tools(mcp)
     register_mep_tools(mcp)
     register_analysis_tools(mcp)
+    register_conduit_tools(mcp)
 
 
 __all__ = ["register_all_tools"]
